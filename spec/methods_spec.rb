@@ -34,17 +34,15 @@ describe '#greet_with_default' do
 end
 
 describe '#add' do
-
-  it 'returns the sum of two numbers' do
-    expect(add(2, 5)).to be(7)
+ it 'returns the sum of two numbers' do
+  expect(add(2, 5)).to eq(7)
   end
 
 end
 
 describe '#halve' do
-  
   it 'returns half of the given integer' do
-    expect(halve(6)).to be(3)
+    expect(halve(6)).to eq(3)
   end
 
   it 'returns nil if not given a integer' do
